@@ -3,7 +3,8 @@
 
 #include "stdio.h"
 
-
+void problem_1();
+void problem_3();
 
 
 
