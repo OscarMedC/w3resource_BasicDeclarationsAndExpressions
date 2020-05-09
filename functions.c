@@ -7,7 +7,6 @@ void problem_1() {
 	printf("Mobilnummer      : +46999999999\n");
 }
 
-
 void problem_3() {
 
 	printf("#####\n");
@@ -30,4 +29,16 @@ void problem_3() {
 	printf("#\n");
 	printf(" ##      ##\n");
 	printf("   ######\n");
+}
+
+void problem_4() {
+
+	char char1 = 'X';
+	char char2 = 'M';
+	char char3 = 'L';
+
+	printf("Test Characters: %c, %c, %c\n", char1, char2, char3);
+	printf("Expected Output:\n");
+	printf("The reverse of %c%c%c is %c%c%c\n", char1, char2, char3, char3, char2, char1);
+
 }
