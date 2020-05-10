@@ -200,3 +200,48 @@ void problem_13() {
 	printf("\nMaximum value of three integers: %d\n", highest);
 
 }
+
+void problem_14() {
+
+	int totalDistance = 0;
+	double spentFuel = 0.0;
+	double avgConsumption = 0.0;
+
+	printf("Input total distance in km: ");
+	scanf_s("%d", &totalDistance);
+	printf("\nInput total fuel spent in liters: ");
+	scanf_s("%lf", &spentFuel);
+
+	avgConsumption = totalDistance / spentFuel;
+
+	printf("\nAverage consumption (km/lt): %.3lf", avgConsumption);
+
+}
+
+void problem_15() {
+
+	int x1 = 0,
+		y1 = 0,
+		x2 = 0,
+		y2 = 0,
+		length = 0,
+		height = 0;
+	double distance = 0.0;
+
+	printf("Input x1: ");
+	scanf_s("%d", &x1);
+	printf("\nInput y1: ");
+	scanf_s("%d", &y1);
+	printf("\nInput x2: ");
+	scanf_s("%d", &x2);
+	printf("\nInput y2: ");
+	scanf_s("%d", &y2);
+
+	length = x2 - x1;
+	height = y2 - y1;
+
+	distance = sqrt(pow(length, 2) + pow(height, 2));
+
+	printf("\nDistance between the said points: %.4lf\n", distance);
+
+}
