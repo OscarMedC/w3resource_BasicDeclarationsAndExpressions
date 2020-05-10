@@ -152,3 +152,23 @@ void problem_11(){
 	printf("\nAverage Value = %f\n", avg_value);
 
 }
+
+void problem_12() {
+
+	char em_id[10];
+	int workingHours = 0;
+	float salary = 15000.0;
+	float totalSalary = 0.0;
+
+	printf("Input the Employess ID (Max. 10 chars): ");
+	scanf_s("%s", em_id, sizeof(em_id));
+
+	printf("\nInput the working hrs: ");
+	scanf_s("%d", &workingHours);
+
+	totalSalary = salary * workingHours;
+
+	printf("\nEmployess ID = %s\n", em_id);
+	printf("Salary = U$ %.2f\n", totalSalary);
+
+}
