@@ -77,5 +77,9 @@ void problem_7() {
 	printf("dx + ax = %d\n", (int)dx + ax);
 	printf("a + x = %f\n", a + x);
 	printf("s + b = %d\n", s + b);
+	printf("ax + b = %ld\n", ax + b);
+	printf("s + c = %hd\n", s + c);
+	printf("ax + c = %ld\n", ax + c);
+	printf("ax + ux = %lu\n", ax + ux);
 
 }
