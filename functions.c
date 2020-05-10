@@ -113,3 +113,42 @@ void problem_9() {
 	printf("Sum of the above two integers = %d\n", sum);
 
 }
+
+void problem_10() {
+
+	int a = 0, b = 0, product = 0;
+
+	printf("Input the first integer: \n");
+	scanf_s("%d", &a);
+
+	printf("Input the second integer: \n");
+	scanf_s("%d", &b);
+
+	product = a * b;
+
+	printf("Sum of the above two integers = %d\n", product);
+
+}
+
+void problem_11(){
+
+	float w_item1 = 0.0, w_item2 = 0.0, nrOf1 = 0.0, nrOf2 = 0.0;
+
+	float avg_value = 0.0;
+
+	printf("Weight - Item 1: ");
+	scanf_s("%f", &w_item1);
+	printf("No. of item 1: ");
+	scanf_s("%f", &nrOf1);
+
+	printf("Weight - Item 2: ");
+	scanf_s("%f", &w_item2);
+	printf("No. of item 2: ");
+	scanf_s("%f", &nrOf2);
+
+
+	avg_value = ((w_item1 * nrOf1) + (w_item2 * nrOf2)) / (nrOf1 + nrOf2);
+
+	printf("\nAverage Value = %f\n", avg_value);
+
+}
