@@ -51,3 +51,12 @@ void problem_5() {
 	printf("Perimeter of the rectangle = %d inches\n",(2 * height) + (2 * width));
 	printf("Area of the rectangle = %d square inches\n", height * width);
 }
+
+void problem_6() {
+
+	float radius = 6.0;
+
+	printf("Perimeter of the Circle = %f inches\n", (2 * M_PI * radius));
+	printf("Area of the Circle = %f inches\n", M_PI * pow(radius, 2));
+
+}
