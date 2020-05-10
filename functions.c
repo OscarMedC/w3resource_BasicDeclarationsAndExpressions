@@ -42,3 +42,12 @@ void problem_4() {
 	printf("The reverse of %c%c%c is %c%c%c\n", char1, char2, char3, char3, char2, char1);
 
 }
+
+void problem_5() {
+
+	int height = 7;
+	int width = 5;
+
+	printf("Perimeter of the rectangle = %d inches\n",(2 * height) + (2 * width));
+	printf("Area of the rectangle = %d square inches\n", height * width);
+}
