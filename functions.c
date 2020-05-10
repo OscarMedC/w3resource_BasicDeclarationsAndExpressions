@@ -61,21 +61,22 @@ void problem_6() {
 
 }
 
+
 void problem_7() {
 
 	int a = 125, b = 12345;
 	long ax = 1234567890;
 	short s = 4043;
-	float x = 2.13459;
+	double x = 2.13459;
 	double dx = 1.1415927;
 	char c = 'W';
 	unsigned long ux = 2541567890;
 
 	printf("a + c = %d\n", a + b);
-	printf("x + c = %f\n", x + c);
+	printf("x + c = %lf\n", x + c);
 	printf("dx + x = %f\n", dx + x);
 	printf("dx + ax = %d\n", (int)dx + ax);
-	printf("a + x = %f\n", a + x);
+	printf("a + x = %lf\n", a + x);
 	printf("s + b = %d\n", s + b);
 	printf("ax + b = %ld\n", ax + b);
 	printf("s + c = %hd\n", s + c);
@@ -170,5 +171,32 @@ void problem_12() {
 
 	printf("\nEmployess ID = %s\n", em_id);
 	printf("Salary = U$ %.2f\n", totalSalary);
+
+}
+
+void problem_13() {
+
+	int a = 0,
+		b = 0,
+		c = 0;
+	int highest = 0;
+
+	printf("Input the first integer: ");
+	scanf_s("%d", &a);
+	printf("\ninput the second integer: ");
+	scanf_s("%d", &b);
+	printf("\nInput the third integer: ");
+	scanf_s("%d", &c);
+
+	if (a > b) {
+		highest = a;
+	}
+	else if (b > c) {
+		highest = b;
+	}
+	else
+		highest = c;
+
+	printf("\nMaximum value of three integers: %d\n", highest);
 
 }
