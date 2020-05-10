@@ -83,3 +83,33 @@ void problem_7() {
 	printf("ax + ux = %lu\n", ax + ux);
 
 }
+
+void problem_8() {
+
+	int days = 1329, weeks = 0, years = 0;
+
+	years = 1329 / 365;
+	weeks = (days % 365) / 7;
+	days = days - ((years * 365) + (weeks * 7));
+
+	printf("Years: %d\n", years);
+	printf("Weeks: %d\n", weeks);
+	printf("Days: %d\n", days);
+
+}
+
+void problem_9() {
+
+	int a = 0, b = 0, sum = 0;
+
+	printf("Input the first integer: \n");
+	scanf_s("%d", &a);
+
+	printf("Input the second integer: \n");
+	scanf_s("%d", &b);
+
+	sum = a + b;
+
+	printf("Sum of the above two integers = %d\n", sum);
+
+}
