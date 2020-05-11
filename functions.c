@@ -245,3 +245,48 @@ void problem_15() {
 	printf("\nDistance between the said points: %.4lf\n", distance);
 
 }
+
+void problem_16() {
+
+	int amountLeft = 0,
+		total = 0;
+
+	printf("Input the amount: ");
+	scanf_s("%d", &amountLeft);
+
+	total = amountLeft / 100;
+
+	printf("\nThere are:\n");
+	printf("%d Note(s) of 100.00", total);
+
+	amountLeft = amountLeft - (total * 100);
+	total = amountLeft / 50;
+
+	printf("\n%d Note(s) of 50.00", total);
+
+	amountLeft = amountLeft - (total * 50);
+	total = amountLeft / 20;
+
+	printf("\n%d Note(s) of 20.00", total);
+
+	amountLeft = amountLeft - (total * 20);
+	total = amountLeft / 10;
+
+	printf("\n%d Note(s) of 10.00", total);
+
+	amountLeft = amountLeft - (total * 10);
+	total = amountLeft / 5;
+
+	printf("\n%d Note(s) of 5.00", total);
+
+	amountLeft = amountLeft - (total * 5);
+	total = amountLeft / 2;
+
+	printf("\n%d Note(s) of 2.00", total);
+
+	amountLeft = amountLeft - (total * 2);
+	total = amountLeft;
+
+	printf("\n%d Note(s) of 1.00", total);
+
+}
