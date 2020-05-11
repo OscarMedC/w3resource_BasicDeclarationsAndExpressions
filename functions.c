@@ -307,3 +307,23 @@ void problem_17() {
 	printf("\nH:M:S - %d:%d:%d\n", hr, min, sec_2);
 
 }
+
+void problem_18() {
+
+	int days = 0,
+		year = 0,
+		month = 0,
+		days_2 = 0;
+
+	printf("Input no. of days: ");
+	scanf_s("%d", &days);
+
+	year = days / 365;
+	month = (days - (year * 365)) / 30;
+	days_2 = days - ((year * 365) + (month * 30));
+
+	printf("\n%d Year(s)", year);
+	printf("\n%d Month(s)", month);
+	printf("\n%d Day(s)", days_2);
+
+}
