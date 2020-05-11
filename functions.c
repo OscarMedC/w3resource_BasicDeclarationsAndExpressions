@@ -61,7 +61,6 @@ void problem_6() {
 
 }
 
-
 void problem_7() {
 
 	int a = 125, b = 12345;
@@ -288,5 +287,23 @@ void problem_16() {
 	total = amountLeft;
 
 	printf("\n%d Note(s) of 1.00", total);
+
+}
+
+void problem_17() {
+
+	int sec = 0,
+		sec_2 = 0,
+		min = 0,
+		hr = 0;
+
+	printf("Input seconds: ");
+	scanf_s("%d", &sec);
+
+	hr = sec / 3600;
+	min = (sec - (3600 * hr)) / 60;
+	sec_2 = (sec - (3600 * hr) - (min * 60));
+
+	printf("\nH:M:S - %d:%d:%d\n", hr, min, sec_2);
 
 }
