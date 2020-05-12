@@ -361,6 +361,26 @@ void problem_19() {
 
 void problem_20() {
 
+	double a = 0.0,
+		b = 0.0,
+		c = 0.0,
+		x1 = 0.0,
+		x2 = 0.0;
 
+
+	printf("Input the first number (a): ");
+	scanf_s("%lf", &a);
+
+	printf("\nInput the second number (b): ");
+	scanf_s("%lf", &b);
+
+	printf("\nInput the third number (c): ");
+	scanf_s("%lf", &c);
+
+	x1 = (-b + sqrt(pow(b, 2) - (4 * a * c))) / (2 * a);
+	x2 = (-b - sqrt(pow(b, 2) - (4 * a * c))) / (2 * a);
+
+	printf("\nx1 = %.2lf", x1);
+	printf("\nx2 = %.2lf", x2);
 
 }
