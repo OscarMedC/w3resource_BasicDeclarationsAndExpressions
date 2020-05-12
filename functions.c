@@ -327,3 +327,40 @@ void problem_18() {
 	printf("\n%d Day(s)", days_2);
 
 }
+
+void problem_19() {
+
+	int p = 0,
+		q = 0,
+		r = 0,
+		s = 0;
+
+	printf("Input the first integer: ");
+	scanf_s("%d", &p);
+
+	printf("\nInput the second integer: ");
+	scanf_s("%d", &q);
+
+	printf("\nInput the third integer: ");
+	scanf_s("%d", &r);
+
+	printf("\nInput the fourth integer: ");
+	scanf_s("%d", &s);
+
+	if (q > r && s > p) {
+
+		if ((r + s) > (q + p)) {
+			printf("\nCorrect values...");
+		}
+		else
+			printf("\nWrong values...");
+	}
+	else
+		printf("\nWrong values...");
+}
+
+void problem_20() {
+
+
+
+}

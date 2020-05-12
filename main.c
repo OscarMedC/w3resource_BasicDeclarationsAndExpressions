@@ -2,7 +2,7 @@
 
 int main() {
 
-	problem_18();
+	problem_19();
 
 	return 0;
 }
