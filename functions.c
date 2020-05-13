@@ -384,3 +384,27 @@ void problem_20() {
 	printf("\nx2 = %.2lf", x2);
 
 }
+
+void problem_21() {
+
+	int nr = 0;
+
+	printf("Input an integer: ");
+	scanf_s("%d", &nr);
+
+	if (nr > 0) {
+		if (nr <= 20) {
+			printf("\nRange [0,20]");
+		}
+		else if (nr >= 21 && nr < 45) {
+			printf("\nRange [20,45]");
+		}
+		else if (nr >= 46 && nr < 80) {
+			printf("\nRange [45,80]");
+		}
+		else
+			printf("\nOut of range");
+	}
+	else
+		printf("\nOut of range");
+}

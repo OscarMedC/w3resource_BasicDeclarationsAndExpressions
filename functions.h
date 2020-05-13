@@ -25,5 +25,6 @@ void problem_17();
 void problem_18();
 void problem_19();
 void problem_20();
+void problem_21();
 
 #endif
